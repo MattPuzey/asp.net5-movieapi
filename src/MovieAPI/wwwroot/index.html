@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html ng-app="moviesApp">
+<head>
+    <base href="/">
+    <meta charset="utf-8" />
+    <title>Movies</title>
+
+    <!--CSS-->
+    <script src="/css/app.js"></script>
+
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- AngularJS-->
+
+    <script src="/lib/angular/angular.js"></script>
+    <script src="/lib/angular-resource/angular-resource.js"></script>
+    <script src="/lib/angular-route/angular-route.js"></script>
+
+    <script src="app.js"></script>
+    <script src="moviesController.js"></script>
+    <script src="moviesService.js"></script>
+</head>
+<body ng-cloak>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="/">Login</a></li>
+    </ul>
+    <div class="container-fluid">
+        <ng-view></ng-view>
+    </div>
+</body>
+</html>
